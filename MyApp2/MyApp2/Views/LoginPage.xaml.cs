@@ -27,7 +27,7 @@ namespace MyApp2.Views
             // await Navigation.PushAsync(new SignUpPage());
         }
 
-        async void OnLoginButtonClicked(object sender, EventArgs e)
+         void OnLoginButtonClicked(object sender, EventArgs e)
         {
             var user = new User()
             {
@@ -55,6 +55,13 @@ namespace MyApp2.Views
         bool AreCredentialsCorrect(User user)
         {
             return user.Username == Constants.Username && user.Password == Constants.Password;
+        }
+
+       
+
+        private void Forgot_Password(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ForgotPassword());
         }
     }
 }

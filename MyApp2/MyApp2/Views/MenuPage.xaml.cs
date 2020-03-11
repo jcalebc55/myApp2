@@ -18,8 +18,10 @@ namespace MyApp2.Views
 
             menuItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
-                new HomeMenuItem {Id = MenuItemType.About, Title="About" }
+                new HomeMenuItem {Id = MenuItemType.TimeCard, Title="Time Card" },
+                new HomeMenuItem {Id = MenuItemType.About, Title="About" },
+                 new HomeMenuItem {Id = MenuItemType.Leave, Title="Leave" },
+                 new HomeMenuItem {Id = MenuItemType.Profile, Title="Profile" }
             };
 
             ListViewMenu.ItemsSource = menuItems;
@@ -33,6 +35,11 @@ namespace MyApp2.Views
                 var id = (int)((HomeMenuItem)e.SelectedItem).Id;
                 await RootPage.NavigateFromMenu(id);
             };
+        }
+
+        private void Sign_Out(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new LoginPage());
         }
     }
 }

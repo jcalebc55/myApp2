@@ -15,7 +15,7 @@ namespace MyApp2
 
 
             //MainPage = new MainPage();
-            MainPage = new LoginPage();
+            MainPage = new NavigationPage(new LoginPage()) ;
         }
 
         protected override void OnStart()

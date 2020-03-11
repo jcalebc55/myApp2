@@ -16,8 +16,9 @@ namespace MyApp2.Views
             InitializeComponent();
 
             MasterBehavior = MasterBehavior.Popover;
-
-            MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+            // The below is edited on 3/11. It was changed from detail to new time card page.
+            // It needs to be figured out how pages are created here and ensure no memory leaks best practices
+            MenuPages.Add((int)MenuItemType.TimeCard, new NavigationPage(new TimeCard()));
         }
 
         public async Task NavigateFromMenu(int id)
@@ -26,11 +27,17 @@ namespace MyApp2.Views
             {
                 switch (id)
                 {
-                    case (int)MenuItemType.Browse:
-                        MenuPages.Add(id, new NavigationPage(new ItemsPage()));
+                    case (int)MenuItemType.TimeCard:
+                        MenuPages.Add(id, new NavigationPage(new TimeCard()));
                         break;
                     case (int)MenuItemType.About:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
+                        break;
+                    case (int)MenuItemType.Leave:
+                        MenuPages.Add(id, new NavigationPage(new LeavePage()));
+                        break;
+                    case (int)MenuItemType.Profile:
+                        MenuPages.Add(id, new NavigationPage(new ProfilePage()));
                         break;
                 }
             }

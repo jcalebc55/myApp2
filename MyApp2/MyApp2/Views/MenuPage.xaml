@@ -16,5 +16,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
+        <Button  Grid.Column="1" Text="Sign Out" Clicked="Sign_Out" />
     </StackLayout>
 </ContentPage>

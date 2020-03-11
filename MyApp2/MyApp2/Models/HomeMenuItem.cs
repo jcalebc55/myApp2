@@ -7,7 +7,10 @@ namespace MyApp2.Models
     public enum MenuItemType
     {
         Browse,
-        About
+        TimeCard,
+        About,
+        Leave,
+        Profile
     }
     public class HomeMenuItem
     {
