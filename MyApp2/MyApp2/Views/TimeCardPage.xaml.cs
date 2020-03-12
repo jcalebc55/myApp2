@@ -10,11 +10,21 @@ using Xamarin.Forms.Xaml;
 namespace MyApp2.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TimeCard : ContentPage
+	public partial class TimeCardPage : ContentPage
 	{
-		public TimeCard ()
+		public TimeCardPage ()
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Iconexample_Activated(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

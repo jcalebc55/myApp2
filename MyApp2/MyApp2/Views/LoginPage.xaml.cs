@@ -61,7 +61,7 @@ namespace MyApp2.Views
 
         private void Forgot_Password(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ForgotPassword());
+            Navigation.PushAsync(new ForgotPasswordPage());
         }
     }
 }
