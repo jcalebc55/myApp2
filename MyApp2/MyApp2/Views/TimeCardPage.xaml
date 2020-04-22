@@ -5,10 +5,10 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Order="Primary"
-                     Text="Icon Item"
+                     Text="Home"
                      Priority="0"
-                     Icon="icon.png"
-                     Clicked="ToolbarItem_Clicked" />
+                     Icon="ndti_logo.png"
+                     Clicked="Go_Home" />
 
         </ContentPage.ToolbarItems>
 

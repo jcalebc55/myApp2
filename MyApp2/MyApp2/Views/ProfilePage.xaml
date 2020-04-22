@@ -3,10 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyApp2.Views.ProfilePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="This is profile Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"  />
+                <RowDefinition  Height="Auto" />
+                <RowDefinition  />
+                <RowDefinition  />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0"  HorizontalTextAlignment="Center" Grid.ColumnSpan="4" Text="Employee Information" FontAttributes="Bold" FontSize="Large" BackgroundColor="Red"/>
+
+            <Label Grid.Row="1"  Grid.Column="1" Text="First Name:" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Blue"/>
+            <Label Grid.Row="1"  Grid.Column="2" Text="Jabez" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Yellow"/>
+
+            <Label Grid.Row="2"  Grid.Column="1" Text="Last Name:" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Green"/>
+            <Label Grid.Row="2"  Grid.Column="2" Text="Vejendla" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Violet"/>
+
+            <Label Grid.Row="3"  Grid.Column="1" Text="Work Email:" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Green"/>
+            <Label Grid.Row="3"  Grid.Column="2"  Text="jabez.vejendla@ndti.net" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Violet"/>
+
+            <Label Grid.Row="4"  Grid.Column="1" Text="Supervisor:" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Green"/>
+            <Label Grid.Row="4"  Grid.Column="2" Text="Kelly Curtis" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Violet"/>
+
+
+        </Grid>
+
+
     </ContentPage.Content>
 </ContentPage>

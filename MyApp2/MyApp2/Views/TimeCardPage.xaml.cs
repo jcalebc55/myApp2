@@ -17,14 +17,11 @@ namespace MyApp2.Views
 			InitializeComponent ();
 		}
 
-        private void ToolbarItem_Clicked(object sender, EventArgs e)
+        private void Go_Home(object sender, EventArgs e)
         {
 
         }
 
-        private void Iconexample_Activated(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

@@ -18,7 +18,7 @@ namespace MyApp2.Views
             MasterBehavior = MasterBehavior.Popover;
             // The below is edited on 3/11. It was changed from detail to new time card page.
             // It needs to be figured out how pages are created here and ensure no memory leaks best practices
-            MenuPages.Add((int)MenuItemType.TimeCard, new NavigationPage(new TimeCardPage()));
+            MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
         }
 
         public async Task NavigateFromMenu(int id)
