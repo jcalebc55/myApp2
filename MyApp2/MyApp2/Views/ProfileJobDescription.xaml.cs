@@ -10,16 +10,21 @@ using Xamarin.Forms.Xaml;
 namespace MyApp2.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Page2 : ContentPage
+	public partial class ProfileJobDescription : ContentPage
 	{
-		public Page2 ()
+		public ProfileJobDescription ()
 		{
 			InitializeComponent ();
 		}
 
-        private void Add_Page3(object sender, EventArgs e)
+        private void onBack(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Page3());
+            Navigation.PopAsync();
+        }
+
+        private void OnJobUpdate(object sender, EventArgs e)
+        {
+
         }
     }
 }

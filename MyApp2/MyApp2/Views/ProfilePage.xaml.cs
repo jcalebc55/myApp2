@@ -14,7 +14,19 @@ namespace MyApp2.Views
 	{
 		public ProfilePage ()
 		{
+            
 			InitializeComponent ();
-		}
-	}
+            workemail.Text = "jabez@ndti.net";
+        }
+
+        private void OnPasswordChange(object sender, EventArgs e)
+        {
+             Navigation.PushAsync(new ProfileUpdatePasswordPage());
+        }
+
+        private void OnJobDesc(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ProfileJobDescription());
+        }
+    }
 }

@@ -12,13 +12,52 @@
 
         </ContentPage.ToolbarItems>
 
-            <ContentPage.Content>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"  />
+                <RowDefinition  Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition  />
+            </Grid.RowDefinitions>
 
-       
-        <StackLayout>
-            <Label Text="This is Time Card Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0"  HorizontalTextAlignment="Center" Grid.ColumnSpan="4" Text="Time Card Entry" FontAttributes="Bold" FontSize="Large" />
+
+            <Label Grid.Row="1"  Grid.Column="1" Text="Employee:"  FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="1"  Grid.Column="2" Text="Jabez Vejendla" FontAttributes="Bold" FontSize="Medium" />
+
+            <Label Grid.Row="2"  Grid.Column="1" Text="Time Card For:" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="2"  Grid.Column="2" Text="4/23/2020" FontAttributes="Bold" FontSize="Medium" />
+
+            <Label Grid.Row="3"  Grid.Column="1" Text="Period:" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="3"  Grid.Column="2"  Text="2020.10" FontAttributes="Bold" FontSize="Medium" />
+
+            <Label Grid.Row="4"  Grid.Column="1" Text="Leave Balance:" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="4"  Grid.Column="2" Text="20" FontAttributes="Bold" FontSize="Medium" />
+
+
+           
+
+           
+           
+            <Button Grid.Row="8"  Grid.Column="1" Text="Submit" />
+            <Button Grid.Row="8"  Grid.Column="2" Text="Cancel"  />
+
+        </Grid>
+
+
     </ContentPage.Content>
 </ContentPage>

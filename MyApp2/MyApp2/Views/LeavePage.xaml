@@ -3,10 +3,61 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyApp2.Views.LeavePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="This is leave Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"  />
+                <RowDefinition  Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition  />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0"  HorizontalTextAlignment="Center" Grid.ColumnSpan="4" Text="Leave Request" FontAttributes="Bold" FontSize="Large" />
+
+            <Label Grid.Row="1"  Grid.Column="1" Text="Employee:"  FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="1"  Grid.Column="2" Text="Jabez Vejendla" FontAttributes="Bold" FontSize="Medium" />
+
+            <Label Grid.Row="2"  Grid.Column="1" Text="Entry Date:" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="2"  Grid.Column="2" Text="4/22/2020" FontAttributes="Bold" FontSize="Medium" />
+
+            <Label Grid.Row="3"  Grid.Column="1" Text="Personal Leave:" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="3"  Grid.Column="2"  Text="20.82" FontAttributes="Bold" FontSize="Medium" />
+
+            <Label Grid.Row="4"  Grid.Column="1" Text="Accrual Rate:" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="4"  Grid.Column="2" Text="4.5" FontAttributes="Bold" FontSize="Medium" />
+
+
+            <Label Grid.Row="5"  Grid.Column="1" Text="Leave Date:" FontAttributes="Bold" FontSize="Medium" />
+            <DatePicker 
+                Grid.Row="5"
+                Grid.Column="2"
+                
+               
+                MinimumDate="04/23/2020"
+            MaximumDate="08/23/2020"
+             />
+
+            <Label Grid.Row="6"  Grid.Column="1" Text="Requested Date:" FontAttributes="Bold" FontSize="Medium" />
+            <Entry Grid.Row="6"  Grid.Column="2" Placeholder="Enter Hours:" FontAttributes="Bold" FontSize="Medium" />
+
+            <Editor Grid.Row="7" Grid.ColumnSpan="4" Placeholder="Enter text here" PlaceholderColor="Olive" AutoSize="TextChanges" />
+            <Button Grid.Row="8"  Grid.Column="1" Text="Submit" Clicked="OnSubmitLeave"/>
+            <Button Grid.Row="8"  Grid.Column="2" Text="Cancel" Clicked="OnCancel" />
+
+        </Grid>
+
+
     </ContentPage.Content>
 </ContentPage>

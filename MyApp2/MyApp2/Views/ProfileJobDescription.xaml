@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyApp2.Views.ProfileJobDescription">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"  />
+                <RowDefinition  Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition  />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0"  HorizontalTextAlignment="Center" Grid.ColumnSpan="4" Text="Employee Job Description" FontAttributes="Bold" FontSize="Large" />
+
+            <Label Grid.Row="1"  Grid.Column="1" Text="Employee Name:" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="1"  Grid.Column="2" Text="Jabez Vejendla" FontAttributes="Bold" FontSize="Medium" />
+
+            <Label Grid.Row="2"  Grid.Column="1" Text="Job Title:" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="2"  Grid.Column="2" Text="Software Engineer" FontAttributes="Bold" FontSize="Medium" />
+
+            <Label Grid.Row="3"  Grid.Column="1" Text="Organization:" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="3"  Grid.Column="2"  Text="Corporate" FontAttributes="Bold" FontSize="Medium" />
+
+            <Button Grid.Row="4" Grid.ColumnSpan="3" HorizontalOptions="Center" Text="Update Job Description" Clicked="OnJobUpdate"/>
+            <Button Grid.Row="5" Grid.ColumnSpan="3" HorizontalOptions="Center" Text="Back" Clicked="onBack"/>
+
+            
+            
+
+
+        </Grid>
+
+
+    </ContentPage.Content>
+</ContentPage>

@@ -6,7 +6,7 @@ namespace MyApp2.Models
 {
     public enum MenuItemType
     {
-        Browse,
+        Home,
         TimeCard,
         About,
         Leave,

@@ -18,6 +18,7 @@ namespace MyApp2.Views
 
             menuItems = new List<HomeMenuItem>
             {
+                new HomeMenuItem {Id = MenuItemType.Home, Title="Home Page" },
                 new HomeMenuItem {Id = MenuItemType.TimeCard, Title="Time Card" },
                 new HomeMenuItem {Id = MenuItemType.About, Title="About" },
                  new HomeMenuItem {Id = MenuItemType.Leave, Title="Leave" },

@@ -10,7 +10,8 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto"  />
                 <RowDefinition  Height="Auto" />
-                <RowDefinition  />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
                 <RowDefinition  />
             </Grid.RowDefinitions>
 
@@ -21,19 +22,23 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0"  HorizontalTextAlignment="Center" Grid.ColumnSpan="4" Text="Employee Information" FontAttributes="Bold" FontSize="Large" BackgroundColor="Red"/>
+            <Label Grid.Row="0"  HorizontalTextAlignment="Center" Grid.ColumnSpan="4" Text="Employee Information" FontAttributes="Bold" FontSize="Large" />
 
-            <Label Grid.Row="1"  Grid.Column="1" Text="First Name:" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Blue"/>
-            <Label Grid.Row="1"  Grid.Column="2" Text="Jabez" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Yellow"/>
+            <Label Grid.Row="1"  Grid.Column="1" Text="First Name:" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="1"  Grid.Column="2" Text="Jabez" FontAttributes="Bold" FontSize="Medium" />
 
-            <Label Grid.Row="2"  Grid.Column="1" Text="Last Name:" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Green"/>
-            <Label Grid.Row="2"  Grid.Column="2" Text="Vejendla" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Violet"/>
+            <Label Grid.Row="2"  Grid.Column="1" Text="Last Name:" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="2"  Grid.Column="2" Text="Vejendla" FontAttributes="Bold" FontSize="Medium" />
 
-            <Label Grid.Row="3"  Grid.Column="1" Text="Work Email:" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Green"/>
-            <Label Grid.Row="3"  Grid.Column="2"  Text="jabez.vejendla@ndti.net" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Violet"/>
+            <Label Grid.Row="3"  Grid.Column="1" Text="Work Email:" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="3"  Grid.Column="2" x:Name="workemail" Text="jabez.vejendla@ndti.net" FontAttributes="Bold" FontSize="Medium" />
 
-            <Label Grid.Row="4"  Grid.Column="1" Text="Supervisor:" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Green"/>
-            <Label Grid.Row="4"  Grid.Column="2" Text="Kelly Curtis" FontAttributes="Bold" FontSize="Medium" BackgroundColor="Violet"/>
+            <Label Grid.Row="4"  Grid.Column="1" Text="Supervisor:" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="4"  Grid.Column="2" Text="Kelly Curtis" FontAttributes="Bold" FontSize="Medium" />
+
+            <Button Grid.Row="5" Grid.ColumnSpan="3" HorizontalOptions="Center" Text="Update Password" Clicked="OnPasswordChange"/>
+
+            <Button Grid.Row="6" Grid.ColumnSpan="3" HorizontalOptions="Center" Text="Job Description" Clicked="OnJobDesc"/>
 
 
         </Grid>

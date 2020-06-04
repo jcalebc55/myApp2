@@ -16,5 +16,16 @@ namespace MyApp2.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void OnSubmitLeave(object sender, EventArgs e)
+        {
+            DisplayAlert("Alert", "Leave Requested has been submitted", "OK");
+        }
+
+        private void OnCancel(object sender, EventArgs e)
+        {
+            DisplayAlert("Alert", "Leave Requested has been Cancelled", "OK");
+        }
+
+    }
 }

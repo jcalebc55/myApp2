@@ -16,7 +16,7 @@
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:TimeCardPage />
+                <views:HomePageTab />
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>
