@@ -6,23 +6,43 @@
   <!--Pages can be added as references or inline-->
     
     <ContentPage Title="Reminders"  >
-    
-        <ListView x:Name="EmployeeResourceView"
-            ItemsSource="{Binding ers}">
+
+        <ListView x:Name="EmployeeLinksView"
+            
+                  HasUnevenRows="true">
             <ListView.ItemTemplate>
-                <DataTemplate >
-                    <TextCell  Text="{Binding Reminder}" />
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Row="1" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Reminder}"
+                                   VerticalOptions="End" />
+                        </Grid>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 
 
-
-
     </ContentPage>
-        <ContentPage Title="Links" />
-  
+        <ContentPage Title="Links" >
 
+
+
+
+
+        
+    </ContentPage>
 
 
 </TabbedPage>

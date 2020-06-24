@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="2.0" package="com.companyname.MyApp2" android:installLocation="auto" android:versionCode="2">
-	<uses-sdk android:minSdkVersion="20" android:targetSdkVersion="25" />
+	<uses-sdk android:minSdkVersion="20" android:targetSdkVersion="27" />
 	<application android:label="MyApp2.Android" android:icon="@drawable/xamarin_logo"></application>
 </manifest>

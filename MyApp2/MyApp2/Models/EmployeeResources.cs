@@ -6,7 +6,7 @@ namespace MyApp2.Models
 {
    public class EmployeeResources
     {
-        public String Reminder;
-        public String Link;
+        public String Reminder { get; set; }
+        public String Link { get; set; }
     }
 }

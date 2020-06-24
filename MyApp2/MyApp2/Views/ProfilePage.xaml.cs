@@ -16,7 +16,7 @@ namespace MyApp2.Views
 		{
             
 			InitializeComponent ();
-            workemail.Text = "jabez@ndti.net";
+            //workemail.Text = "jabez@ndti.net";
         }
 
         private void OnPasswordChange(object sender, EventArgs e)
