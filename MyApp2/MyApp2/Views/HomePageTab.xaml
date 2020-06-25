@@ -7,7 +7,7 @@
     
     <ContentPage Title="Reminders"  >
 
-        <ListView x:Name="EmployeeLinksView"
+        <ListView x:Name="EmployeeRemindersView"
             
                   HasUnevenRows="true">
             <ListView.ItemTemplate>
@@ -37,7 +37,31 @@
     </ContentPage>
         <ContentPage Title="Links" >
 
+        <ListView x:Name="EmployeeLinksView"
+            ItemTapped="OnListViewItemTapped"
+                  HasUnevenRows="true">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
 
+                            <Label Grid.Row="1" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Reminder}"
+                                   VerticalOptions="End" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
 
 
